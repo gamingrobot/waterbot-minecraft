@@ -10,6 +10,7 @@ https://github.com/SpockBotMC/SpockBot
 ## Usage
 
 ```
+git clone --recursive git@github.com:gamingrobot/waterbot-minecraft.git
 mv config.py.example config.py
 python3 main.py
 ```
