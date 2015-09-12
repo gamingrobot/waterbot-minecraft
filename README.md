@@ -8,7 +8,9 @@ This bot is mainly a test of the SpockBot framework and some of the plugins may 
 https://github.com/SpockBotMC/SpockBot
 
 ## Usage
-```mv config.py.example config.py
+
+```
+mv config.py.example config.py
 python3 main.py
 ```
 
