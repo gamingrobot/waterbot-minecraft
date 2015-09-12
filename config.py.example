@@ -1,0 +1,25 @@
+from spock import Client
+from spock.plugins import default_plugins
+
+from extra.plugins import chat, follow, base_commands, chat_command
+
+bot_plugins = [
+    ('chat', chat.ChatPlugin),
+    ('follow', follow.FollowPlugin),
+    ('base_cmd', base_commands.BaseCommandsPlugin),
+    ('chat_cmd', chat_command.ChatCommandPlugin),
+]
+
+settings = {
+    'auth': {
+        'authenticated': False
+    },
+    'start':  {
+        'username': 'Bot',
+        'password': '',
+        'host': 'localhost',
+        'port': 25565,
+    }
+}
+
+plugins = default_plugins + bot_plugins
