@@ -1,5 +1,4 @@
-from spock import Client
-from spock.plugins import default_plugins
+from spockbot.plugins import default_plugins
 
 from extra.plugins import chat, follow, base_commands, chat_command
 
