@@ -27,6 +27,5 @@ class DebugPlugin(PluginBase):
         slot = self.inventory.find_slot(item, self.inventory.window.hotbar_slots)
         if slot is not None:
             self.inventory.select_active_slot(slot)
-            self.interact.edit_book(["Hello", "World"])
-            self.interact.sign_book("something", "something else")
-
+            chars = 13300
+            self.interact.write_book("a"* chars, author="Soup", title="A Title", sign=True)
